@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: fit-content;
+    animation: image_slide 10s ease 2s infinite alternate forwards;
+}
+main img{
+    width: 100vw;
+    height: 100vh;   
+}
+@keyframes image_slide{
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-100vh);
+    }
+    50%{
+        transform: translateY(-200vh);
+    }
+    75%{
+        transform: translateY(-300vh);
+    }
+    100%{
+        transform: translateY(-400vh);
+    }
+}

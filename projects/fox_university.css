@@ -1,0 +1,845 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 4rem;
+}
+
+.home {
+    display: flex;
+    line-height: 2rem;
+}
+
+.home ion-icon {
+    font-size: 2rem;
+    color: orange;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+header h4 {
+    font-size: 1.5rem;
+}
+
+header p {
+    font-size: 1.5rem;
+}
+
+header button {
+    width: 10%;
+    height: 6vh;
+    font-size: 2rem;
+    background-color: orange;
+}
+
+header button:hover {
+    background-color: white;
+}
+
+nav {
+    width: 80%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(4, 4, 58);
+    color: white;
+}
+
+nav ul {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+
+nav input {
+    width: 30%;
+    height: 8vh;
+    font-size: 2rem;
+    border-radius: 3rem;
+    background-color: rgb(4, 4, 58);
+    color: white;
+}
+
+nav ion-icon {
+    display: none;
+}
+
+#educate {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://technext.github.io/fox/images/bg_1.jpg);
+    background-size: cover;
+}
+
+#educate section {
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#educate section h1 {
+    font-size: 5rem;
+    width: 40%;
+}
+
+#educate section p {
+    font-size: 2rem;
+    width: 50%;
+    color: white;
+}
+
+#educate button {
+    width: 12%;
+    height: 7vh;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 3rem;
+    background-color: rgb(227, 151, 9);
+    color: white;
+    border: none;
+}
+
+#college {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+#college section {
+    width: 40rem;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#college ion-icon {
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 4rem;
+}
+
+#college h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+#college p {
+    width: 90%;
+    font-size: 2rem;
+    color: white;
+}
+
+.book {
+    background-color: orangered;
+}
+
+.club {
+    background-color: rgb(6, 6, 41);
+}
+
+#offer {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#offer h1 {
+    font-size: 3rem;
+}
+
+#offer p {
+    font-size: 1.8rem;
+    color: gray;
+}
+
+#offer aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#student {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.safety {
+    width: 30rem;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.safety span {
+    width: 100%;
+}
+
+.safety p {
+    color: gray;
+    margin-top: 2rem;
+}
+
+.safety h2 {
+    font-size: 1.8rem;
+}
+
+.safety ion-icon {
+    font-size: 5rem;
+    background-color: rgb(243, 84, 26);
+    padding: 2rem;
+    border-radius: 50%;
+    height: 5vh;
+    margin-right: 2rem;
+    color: white;
+}
+
+#offer img {
+    width: auto;
+    height: 100vh;
+}
+
+#student {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#university {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left, rgb(251, 34, 34), rgb(123, 92, 92)), url(https://technext.github.io/fox/images/bg_3.jpg);
+    background-blend-mode: hard-light;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#university aside {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#university img {
+    width: 50%;
+    height: auto;
+}
+
+#fox {
+    width: 40%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#fox h1 {
+    font-size: 4.5rem;
+    color: white;
+}
+
+#fox p {
+    font-size: 1.8rem;
+    color: white;
+}
+
+#university>section {
+    width: 80%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#university article>h1 {
+    font-size: 4rem;
+    color: white;
+}
+
+#university article>p {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    color: white;
+}
+
+#course {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#course1 {
+    width: 65%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#course1 h1 {
+    font-size: 5rem;
+}
+
+#course1>p {
+    font-size: 2rem;
+    color: gray;
+}
+
+#engineer {
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 7rem;
+}
+
+#engineer img {
+    width: 30rem;
+    height: 30vh;
+}
+
+#engineer ul {
+    display: flex;
+}
+
+#engineer ul li {
+    padding-right: 4rem;
+}
+
+#engineer ion-icon {
+    color: orange;
+}
+
+#engineer h2 {
+    font-size: 2.5rem;
+}
+
+#engineer p {
+    font-size: 1.5rem;
+    width: 85%;
+    color: gray;
+}
+
+#engineer button {
+    width: 15rem;
+    height: 5vh;
+    border-radius: 3rem;
+    background-color: orange;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+}
+
+#engineer button:hover {
+    background-color: white;
+    color: orange;
+}
+
+#engineer section {
+    width: 30rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#certify {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#certify1 {
+    width: 60%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+#certify h1 {
+    font-size: 4rem;
+}
+
+#certify p {
+    font-size: 1.8rem;
+}
+
+#teacher {
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#teacher>section {
+    width: 35rem;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#teacher img {
+    width: 90%;
+    height: auto;
+}
+
+#teacher h3 {
+    font-size: 2.5rem;
+}
+
+#teacher h5 {
+    font-size: 1.2rem;
+    color: orange;
+}
+
+#teacher p {
+    font-size: 1.8rem;
+    color: gray;
+}
+
+#quote {
+    width: 100%;
+    height: 80vh;
+    border: 1px solid red;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(255, 57, 7), rgb(45, 44, 44)), url(https://technext.github.io/fox/images/bg_5.jpg);
+    background-blend-mode: hard-light;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#request {
+    width: 40%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 5rem;
+}
+
+#request h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+#request p {
+    font-size: 1.8rem;
+    color: white;
+    width: 75%;
+}
+
+#request form {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+
+#request form input,
+select {
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: transparent;
+    color: white;
+    padding: 2rem;
+    width: 80%;
+}
+
+#request form textarea {
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 80%;
+    height: 7vh;
+    background-color: transparent;
+    color: white;
+    padding-left: 2rem;
+}
+
+#request form button {
+    width: 80%;
+    height: 7vh;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: orange;
+    color: white;
+    border: none;
+}
+
+#request input::placeholder {
+    color: white;
+}
+
+#blog {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#recent {
+    width: 45%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+#recent h1 {
+    font-size: 4rem;
+}
+
+#recent p {
+    font-size: 1.6rem;
+}
+
+#memory {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#memory section {
+    width: 40rem;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#memory img {
+    width: 90%;
+    height: auto;
+}
+
+#memory h4 {
+    font-size: 2.5rem;
+    width: 80%;
+}
+
+#memory p {
+    font-size: 1.7rem;
+    width: 80%;
+}
+
+#memory button {
+    width: 30%;
+    height: 5vh;
+    font-size: 2rem;
+    border-radius: 3rem;
+    background-color: orange;
+    color: white;
+    border: none;
+}
+
+#memory article {
+    display: flex;
+    align-items: center;
+}
+
+#memory h5 {
+    font-size: 1.5rem;
+    margin-left: 10rem;
+    color: orange;
+}
+
+#memory div {
+    font-size: 1.6rem;
+    color: gray;
+}
+
+#fox_img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#fox_img img {
+    width: 35rem;
+    height: auto;
+}
+
+footer {
+    width: 100rem;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    flex-wrap: wrap;
+}
+
+footer section {
+    width: 20%;
+    height: auto;
+    margin-top: 5rem;
+}
+
+#answer {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+#answer ion-icon {
+    color: white;
+    font-size: 2rem;
+}
+
+footer h3 {
+    font-size: 2rem;
+    color: white;
+}
+
+footer p {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: white;
+}
+
+#power {
+    width: 30rem;
+    height: auto;
+    border: 1px solid black;
+}
+
+.recent {
+    width: 100%;
+    height: 25vh;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+.recent img {
+    width: auto;
+    height: 10vh;
+    margin-top: 3rem;
+}
+
+.recent {
+    display: flex;
+}
+
+.recent article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 2.5rem;
+}
+
+.recent span {
+    color: gray;
+}
+
+.recent div {
+    color: gray;
+}
+
+footer section ul {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    line-height: 2.5rem;
+    color: whitesmoke;
+}
+
+footer section button {
+    width: 70%;
+    height: 5vh;
+    background-color: rgb(114, 114, 239);
+    color: white;
+    margin-top: 1rem;
+}
+
+footer section button:hover {
+    background-color: orange;
+}
+
+#subscribe {
+    width: 20%;
+    height: 40vh;
+}
+
+#subscribe input {
+    width: 70%;
+    height: 5vh;
+    background-color: rgb(85, 81, 81);
+    margin-top: 2rem;
+}
+
+#subscribe h4 {
+    font-size: 2.5rem;
+    color: white;
+    margin-top: 3rem;
+}
+
+footer #span ion-icon {
+    color: white;
+    padding-left: 3rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    html {
+        font-size: 8px;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ion-icon {
+        display: block;
+        font-size: 3rem;
+    }
+
+    nav:hover ul {
+        display: block;
+        position: absolute;
+        top: 9rem;
+        left: 15rem;
+        background-color: white;
+        color: black;
+        width: 10%;
+    }
+
+    #college section {
+        width: 50rem;
+    }
+
+    #offer {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+
+}
+
+@media screen and (max-width:767px) and (min-width:369px) {
+
+
+    html {
+        font-size: 5px;
+    }
+
+    header {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ion-icon {
+        display: block;
+        font-size: 4rem;
+    }
+
+    nav:hover ul {
+        display: block;
+        position: absolute;
+        top: 15rem;
+        left: 15rem;
+        background-color: white;
+        color: black;
+        width: 10%;
+
+    }
+    #college {
+        flex-direction: column;
+    }
+    #college{
+    width: 100%;
+    align-items: center;
+    height: auto;
+    padding: 2rem;
+    }
+    #college section {
+        width: 60rem;
+        height: 40rem;
+    }
+
+    #educate {
+        flex-wrap: wrap;
+        height: auto;
+    }
+}

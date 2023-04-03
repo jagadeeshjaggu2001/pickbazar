@@ -1,0 +1,1036 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    width: 70rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ion-icon {
+    font-size: 4rem;
+    display: none;
+}
+
+nav img {
+    width: auto;
+    height: 30px;
+}
+
+nav button {
+    width: 18rem;
+    height: 7vh;
+    border-radius: 3rem;
+    background-color: green;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+}
+
+.fresh {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgb(227, 205, 205), rgb(226, 219, 219)), url(http://themeturn.com/tf-db/orgenik-demo/orgenik/assets/images/bg/home-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: hard-light;
+}
+
+.fresh section {
+    width: 60rem;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.fresh h1 {
+    font-size: 8rem;
+    font-weight: bold;
+}
+
+.fresh h6 {
+    font-size: 1.5rem;
+    color: green;
+}
+
+.fresh section p {
+    font-size: 2rem;
+
+}
+
+.fresh section p button {
+    width: 20rem;
+    height: 7vh;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 3rem;
+    border: none;
+}
+
+.fresh #farm {
+    background-color: orange;
+    margin-right: 1rem;
+    color: white;
+}
+
+.organic {
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.organic img {
+    width: auto;
+    height: 20vh;
+}
+
+.organic section {
+    width: 30rem;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(239, 246, 246);
+}
+
+.organic h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(17, 17, 93);
+}
+
+.organic p {
+    font-size: 2rem;
+}
+
+.orange {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.orange img {
+    width: auto;
+    height: 60vh;
+}
+
+.orange h1 {
+    font-size: 5rem;
+    color: rgb(13, 13, 70);
+    padding-top: 3rem;
+
+}
+
+.orange h5 {
+    font-size: 1.5rem;
+    color: green;
+}
+
+.orange>section {
+    width: 40%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#provide {
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+}
+
+#provide h3 {
+    font-size: 2rem;
+    color: rgb(13, 13, 69);
+}
+
+#provide ion-icon {
+    background-color: orange;
+    font-size: 4rem;
+    border-radius: 50%;
+    color: white;
+}
+
+#provide #icon {
+    background-color: rgb(13, 104, 13);
+}
+
+.orange button {
+    width: 20rem;
+    height: 7vh;
+    border-radius: 3rem;
+    background-color: rgb(12, 77, 12);
+    font-weight: bold;
+    color: white;
+    border: none;
+}
+
+.orange button:hover {
+    background-color: orange;
+}
+
+#solution {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+    background-color: aliceblue;
+}
+
+#health {
+    width: 30%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#health h5 {
+    color: green;
+    font-size: 1.5rem;
+}
+
+#health h1 {
+    font-size: 4.5rem;
+    color: rgb(16, 16, 115);
+}
+
+.service {
+    width: 70%;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 5rem;
+    margin: 1rem;
+
+}
+
+.service img {
+    width: auto;
+    height: 30vh;
+}
+
+.service section {
+    width: 100%;
+    height: 50vh;
+    border: 1px solid whitesmoke;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+}
+
+.service section h2 {
+    color: rgb(11, 11, 92);
+    font-size: 2.5rem;
+}
+
+.service section p {
+    font-size: 2rem;
+}
+
+#success {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#success img {
+    width: 98.6vw;
+    height:50vh;
+}
+
+#text_box {
+    position: absolute;
+    top: 15rem;
+    left: 20rem;
+    width: 50rem;
+    height: 40rem;
+    background-color: white;
+    color: rgb(12, 12, 82);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-left: 10px solid green;
+    border-radius: 1rem;
+
+}
+
+#text_box h1 {
+    font-size: 5rem;
+}
+
+#text_box button {
+    width: 40%;
+    height: 7vh;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 3rem;
+    background-color: orange;
+    color: white;
+    border: none;
+}
+
+#text_box button:hover {
+    background-color: rgb(26, 71, 26);
+}
+
+#story {
+    width: 70%;
+    height: auto;
+    margin-top: 20rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#our_story img {
+    width: 50rem;
+    height: auto;
+}
+
+#story section {
+    width: 50rem;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#story section h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: green;
+}
+
+#story section h1 {
+    font-size: 5rem;
+    color: rgb(9, 9, 67);
+}
+
+#story section p {
+    font-size: 2rem;
+}
+
+#story section ul {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(8, 8, 58);
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5rem;
+}
+
+#story button {
+    width: 30%;
+    height: 7vh;
+    border-radius: 3rem;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+#story button:hover {
+    background-color: green;
+}
+
+#store {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(http://themeturn.com/tf-db/orgenik-demo/orgenik/assets/images/bg/cta.jpg);
+    background-size: cover;
+}
+
+#store section {
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#store section h5 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+#store section h1 {
+    width: 65rem;
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+#store section button {
+    width: 30%;
+    height: 7vh;
+    border-radius: 3rem;
+    border: none;
+    color: green;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#store section button:hover {
+    background-color: orange;
+}
+
+#shop {
+    width: 80%;
+    height: 70vh;
+    background-color: rgb(225, 243, 243);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -15rem;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+#shopimg {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 51rem !important;
+    height: 48rem;
+    position: relative;
+}
+
+#shop img {
+    height: auto;
+    width: 45rem;
+}
+
+#shop span {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    position: absolute;
+    background-color: orange;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border: none;
+    top: 5rem;
+    right: 4rem;
+    padding: 2rem;
+    color: white;
+}
+
+#shop section:nth-child(2) {
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#shop section h5 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: green;
+    margin-top: 5rem;
+}
+
+#shop section h1 {
+    font-size: 8rem;
+    color: rgb(14, 14, 64);
+    margin-top: 3rem;
+}
+
+#shop section p {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+#shop section button {
+    width: 30%;
+    height: 7vh;
+    border-radius: 3rem;
+    background-color: rgb(86, 155, 86);
+    color: white;
+    font-weight: bold;
+    margin-top: 4rem;
+    border: none;
+}
+
+#shop section button:hover {
+    background-color: orange;
+}
+
+#product {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+#product section {
+    width: 40%;
+    height: 20vh;
+}
+
+#product h5 {
+    font-size: 1.5rem;
+    color: green;
+    font-weight: bold;
+    margin-top: 5rem;
+}
+
+#product h1 {
+    font-size: 5rem;
+    margin-top: 2rem;
+    color: rgb(18, 18, 79);
+}
+
+#visit {
+    width: 100% !important;
+    height: auto !important;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10rem;
+
+}
+
+#visit section {
+    width: 25rem;
+    height: 45vh;
+    border: 2px solid rgb(240, 230, 230);
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#visit img {
+    width: auto;
+    height: 18vh;
+}
+
+#visit ion-icon {
+    font-size: large;
+    color: orange;
+    margin-top: 5rem;
+}
+
+#visit section h3 {
+    font-size: 2rem;
+    color: rgb(20, 20, 91);
+    margin-top: -2rem;
+}
+
+#visit section h5 {
+    font-size: 2rem;
+    margin-top: -1rem;
+}
+
+#visit span {
+    color: rgb(213, 191, 143);
+}
+
+#more {
+    width: 30% !important;
+    height: 5vh;
+    margin-top: 5rem;
+}
+
+#more p {
+    font-size: 2rem;
+}
+
+#more button {
+    width: 50%;
+    height: 7vh;
+    border-radius: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: orange;
+    margin-top: 3rem;
+    color: white;
+    border: none;
+}
+
+#more button:hover {
+    background-color: green;
+}
+
+#blog {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    position: relative;
+    background-color: rgb(244, 249, 249);
+}
+
+#grow {
+    width: 30rem;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+#grow h5 {
+    font-size: 1.5rem;
+    color: rgb(2, 89, 2);
+}
+
+#grow h1 {
+    font-size: 4rem;
+    color: rgb(13, 13, 103);
+}
+
+#article {
+    width: 100rem;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#article section {
+    width: 41.5rem;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-left: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#article section img {
+    width: 40rem;
+    height: 30vh;
+    margin-top: -1.8rem;
+}
+
+#article span {
+    width: 10rem;
+    height: 4vh;
+    border: 1px solid black;
+    position: absolute;
+    border-radius: 3rem;
+    padding-left: 1.8rem;
+    padding-top: .6rem;
+    font-size: 1.8rem;
+    margin-top: -45rem;
+    margin-left: 22rem;
+    background-color: white;
+}
+
+#article ul {
+    font-size: 1.3rem;
+    display: flex;
+    margin-left: 1rem;
+}
+
+#article ul li {
+    padding-left: 3.5rem;
+}
+
+#article hr {
+    width: 80%;
+    margin-left: 3rem;
+    margin-top: -1rem;
+}
+
+#article h2 {
+    font-size: 3rem;
+    color: rgb(13, 13, 105);
+    margin-top: -2rem;
+    margin-left: 2rem;
+}
+
+#article p {
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+#article button {
+    width: 40%;
+    height: 5vh;
+    background-color: green;
+    border-radius: 3rem;
+    border: none;
+    font-weight: bold;
+    color: white;
+    margin-left: 2rem;
+}
+
+#article button:hover {
+    background-color: orange;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+footer section {
+    width: 30rem;
+    height: 30rem;
+}
+
+footer section p {
+    font-size: 1.8rem;
+    margin-top: 3rem;
+}
+
+footer section h5 {
+    font-size: 2rem;
+    color: rgb(6, 6, 78);
+    margin-bottom: 3rem;
+}
+
+footer section ul {
+    font-size: 2rem;
+    line-height: 4rem;
+}
+
+#select {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+#select ion-icon {
+    padding: 1.2rem;
+    background-color: rgb(228, 249, 249);
+    border-radius: 50%;
+}
+
+#figure {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+#figure img {
+    width: auto;
+    height: 10vh;
+    border-radius: 1rem;
+}
+
+#contact section h6 {
+    font-size: 3rem;
+    color: rgb(12, 12, 104);
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    html {
+        font-size: 8px;
+    }
+
+    body {
+    }
+
+    nav{
+        position: relative;
+    }
+    nav ul {
+        display: none;
+    }
+
+    nav ion-icon {
+        display: block;
+
+    }
+
+    nav:hover ul{
+        display: block;
+        position: absolute;
+        right: 15rem;
+        display: flex;
+        flex-direction: column;
+        height: 40rem;
+        top: 6rem;
+        background-color: white;
+        width: 15rem;
+    }
+
+    .fresh section {
+        width: 80rem;
+    }
+
+    .organic {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .orange {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .service {
+        display: grid;
+        grid-template-columns: auto auto;
+        height: auto;
+    }
+
+    .service section {
+        width: 40rem;
+        height: 43vh;
+    }
+
+    .service img {
+        width: auto;
+        height: 25vh;
+    }
+
+    #story {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #shop {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #shopimg {
+        width: 40rem;
+        height: auto`;
+    }
+
+    #visit {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1rem;
+        height: auto;
+    }
+
+    #article {
+        width: 30rem;
+        display: grid;
+        grid-template-columns: auto auto;
+        height: auto;
+    }
+
+    #article section {
+        width: 40rem;
+        height: 65vh;
+    }
+
+    #contact {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 5rem;
+        height: auto;
+    }
+
+    #health {
+        width: 100%;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 3rem;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:767px) and (min-width:369px) {
+    html {
+        font-size: 5px;
+    }
+
+    body {
+        
+    }
+    nav{
+        position: relative;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ion-icon {
+        display: block;
+    }
+    nav:hover ul{
+        display: block;
+        position: absolute;
+        top: 14rem;
+        right: 10rem;
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 20%;
+    }
+    nav button{
+        font-size: 2rem;
+    }
+    .fresh section {
+        width: 80rem;
+    }
+
+    .organic {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .orange {
+        flex-direction: column;
+        height: auto;
+    }
+    .orange img{
+        width: 60rem;
+    }
+
+    .organic section {
+        width: 100%;
+        margin: 1rem auto;
+    }
+    .service{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    #text_box {
+        bottom: -20rem;
+    }
+    #our_story img{
+        height: 60vh;
+        width: 60rem;
+    }
+    #success {
+        height: auto;
+    }
+    #success img{
+        height: 50vh;
+    }
+    #text_box{
+        height: auto;
+        width: 60%;
+    }
+
+    #story {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #store section {
+        width: 80%;
+    }
+
+    #shop {
+        flex-direction: column;
+    }
+    #visit {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #visit section {
+        width: 60rem;
+        margin-bottom: 2rem;
+    }
+
+    #article {
+        flex-direction: column;
+        height: auto;
+    }
+    #article section{
+        width: 60%;
+    }
+    #article section img{
+        width: 100%;
+    }
+    #article span{
+        margin-bottom: 20rem;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+    }
+    footer section{
+        width: 50%;
+    }
+    footer section p{
+        font-size: 2rem;
+    }
+}
